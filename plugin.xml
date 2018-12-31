@@ -9,8 +9,9 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
     <platform name="android">
-      <config-file target="AndroidManifest.xml" parent="/manifest">
+      <config-file parent="/manifest/application" target="AndroidManifest.xml">
         <meta-data android:name="android.max_aspect" android:value="ratio_float"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
       </config-file>
     </platform>
 </plugin>
