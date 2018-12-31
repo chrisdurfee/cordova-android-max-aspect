@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-android-fullscreen-splash" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Max Aspect</name>
+    <author>Chris Durfee</author>
+    <description>Cordova plugin to add the max aspect support to android.</description>
+    <keywords>cordova Max Aspect</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <meta-data android:name="android.max_aspect" android:value="ratio_float"/>
+      </config-file>
+    </platform>
+</plugin>
